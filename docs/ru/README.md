@@ -38,8 +38,8 @@
 
 Зарегистрировать домен для вашего мессенджера, например `dandelion-test.com`.  
 
-Пример Apache Reverse Proxy конфигурации `/etc/apache2/sites-available/dandelion-test.com.conf` (для порта `8085` сервера, домена `dandelion-test.com` и `letsencrypt` сертификатом):
-```xml
+Пример Apache Reverse Proxy конфигурации `/etc/apache2/sites-available/dandelion-test.com.conf` (для порта `8085` сервера, домена `dandelion-test.com` с `letsencrypt` сертификатом):
+```
 <IfModule mod_ssl.c>
     <VirtualHost *:443>
         ServerName dandelion-test.com
@@ -67,20 +67,29 @@
 
 ```
 
+#### 4. Заполнить конфигурационный файл сервера settings.json
+
+Пример:
+```json
+
+```
+
+#### 5. Запустить сервер
+
 #### Переменные окружения для запуска сервера
 
 *   **PORT:** порт, на котором будет работать сервер
 *   **HOST:** хост, на котором будет работать сервер
 *   **CONFIG:** путь к файлу конфигурации сервера
 
-#### Запуск сервера через fat-jar
+#### 5.1 Запуск сервера через fat-jar
 
 Пример запуска:
 ```sh
 CONFIG="config/settings.json" PORT=8085 HOST="127.0.0.1" /usr/lib/jvm/java-21-openjdk-amd64/bin/java -jar dandelionserver.jar
 ```
 
-#### Запуск сервера из docker контейнера
+#### 5.2 Запуск сервера из docker контейнера
 
 **docker-compose.yml** для запуска сервера на порту `8085`, на фиксированном ip `172.18.0.100` виртуальной сети. Предполагается, что конфигурационный файл сервера лежит по пути `config/settings.json` относительно `docker-compose.yml`:
 
@@ -112,3 +121,10 @@ networks:
         - subnet: 172.18.0.0/16
 
 ```
+
+Запуск контейнера из директории с docker-compose.yml:
+
+```sh
+docker-compose up -d
+```
+
