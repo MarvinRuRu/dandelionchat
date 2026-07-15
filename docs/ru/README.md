@@ -19,7 +19,7 @@
 *   ### 📄 **Сервер**
 
 #### Ключевые Особенности
-*   **Пакет установки:** * 📦 **[Fat JAR](https://github.com/MarvinRuRu/dandelionchat/releases/)** на jvm 21 или docker-image `zzhekaa/dandelionserver:latest`
+*   **Пакет установки:** 📦 **[Fat JAR](https://github.com/MarvinRuRu/dandelionchat/releases/)** на jvm 21 или docker-image `zzhekaa/dandelionserver:latest`
 *   **БД:** Mariadb. Протестировано на `10.11.14-MariaDB`
 *   **Система оповещения мобильных клиентов:** Google Firebase.
 
