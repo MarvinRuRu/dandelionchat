@@ -1,5 +1,9 @@
 ## Dandelion chat. Server part.
 
+*   📄 **Client**
+
+*   📄 **Server**
+
 ### Description
 This repository contains a modular development environment optimized for secure code deployments. It features an automated workflow built around GitHub's latest security standards.
 
