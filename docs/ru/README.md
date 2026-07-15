@@ -34,6 +34,13 @@
 
 2.1 Подготовить параметры Google Firebase для Android и IOS, которые позже будут использованы в п.4. См. документацию в интернете.  
 
+IOS App Store ID: `6788429394`  
+IOS Bundle ID: `zh.dandelion.client`  
+IOS Team ID: `DC7N64S349`  
+  
+Android package name: `zh.dandelion.client.full`
+
+
 2.2 Скачать `Firebase Server Private Key` в доступную для сервера директорию (например в директорию с конфигурационным файлом `settings.json` из п.4).
 
 #### 3. Настроить Apache Reverse Proxy сайт для сервера
