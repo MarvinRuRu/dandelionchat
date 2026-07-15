@@ -23,6 +23,48 @@
 *   **БД:** Mariadb. Протестировано на `10.11.14-MariaDB`
 *   **Система оповещения мобильных клиентов:** Google Firebase.
 
+### 🏗 Настройка и запуск сервера
+
+#### 1. Установить и настроить Mariadb  
+
+Установить Mariadb, создать пустую БД и пользователя с правами доступа к ней.  
+Если работа с БД будет осуществляться из docker контейнера с фиксированным IP (в примере `172.18.0.100`) иметь это в виду при настройке прав.
+
+#### 2. Подготовить проект Google Firebase
+
+Подготовить параметры Google Firebase для Android и IOS. См. документацию в интернете.
+
+#### 3. Настроить Apache Reverse Proxy для сервера
+
+Пример конфигурации `/etc/apache2/sites-available/dandelion-test.com.conf` (для порта `8085`):
+```xml
+<IfModule mod_ssl.c>
+    <VirtualHost *:443>
+        ServerName dandelion-test.com
+
+        SSLEngine on
+
+        RewriteEngine On
+        RewriteCond %{HTTP:Upgrade} =websocket [NC] 
+        RewriteRule ^/(.*) ws://127.0.0.1:8085/$1 [P,L]
+
+        ProxyPreserveHost On
+        ProxyPass / http://127.0.0.1:8085/
+        ProxyPassReverse / http://127.0.0.1:8085/
+
+        RequestHeader set X-Forwarded-Proto "https"
+        
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
+        Include /etc/letsencrypt/options-ssl-apache.conf
+
+        SSLCertificateFile /etc/letsencrypt/live/dandelion-test.com/fullchain.pem
+        SSLCertificateKeyFile /etc/letsencrypt/live/dandelion-test.com/privkey.pem
+    </VirtualHost>
+</IfModule>
+
+```
+
 #### Переменные окружения для запуска сервера
 
 *   **PORT:** порт, на котором будет работать сервер
