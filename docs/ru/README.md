@@ -19,7 +19,7 @@
 *   ### 📄 **Сервер**
 
 #### Ключевые Особенности
-*   **Пакет установки:** fat-jar на jvm 21 или docker-контейнер. 
+*   **Пакет установки:** fat-jar на jvm 21 или docker-image `zzhekaa/dandelionserver:latest`. 
 *   **БД:** Mariadb. Протестировано на `10.11.14-MariaDB`
 *   **Система оповещения мобильных клиентов:** Google Firebase.
 
