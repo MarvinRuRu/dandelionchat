@@ -32,7 +32,7 @@
 #### Запуск сервера через fat-jar
 
 Пример запуска:
-```
+```sh
 CONFIG="config/settings.json" PORT=8085 HOST="127.0.0.1" /usr/lib/jvm/java-21-openjdk-amd64/bin/java -jar dandelionserver.jar
 ```
 
