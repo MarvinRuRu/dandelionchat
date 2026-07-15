@@ -1,4 +1,4 @@
-## Dandelion chat. Server part.
+## Dandelion chat
 
 *   📄 **Client**
 
