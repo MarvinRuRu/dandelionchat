@@ -23,7 +23,7 @@
 *   **БД:** Mariadb. Протестировано на `10.11.14-MariaDB`
 *   **Система оповещения мобильных клиентов:** Google Firebase.
 
-### 🏗 Настройка и запуск сервера
+### Настройка и запуск сервера
 
 #### 1. Установить и настроить Mariadb  
 
@@ -34,9 +34,11 @@
 
 Подготовить параметры Google Firebase для Android и IOS. См. документацию в интернете.
 
-#### 3. Настроить Apache Reverse Proxy для сервера
+#### 3. Настроить Apache Reverse Proxy сайт для сервера
 
-Пример конфигурации `/etc/apache2/sites-available/dandelion-test.com.conf` (для порта `8085`):
+Зарегистрировать домен для вашего мессенджера, например `dandelion-test.com`.  
+
+Пример Apache Reverse Proxy конфигурации `/etc/apache2/sites-available/dandelion-test.com.conf` (для порта `8085` сервера, домена `dandelion-test.com` и `letsencrypt` сертификатом):
 ```xml
 <IfModule mod_ssl.c>
     <VirtualHost *:443>
