@@ -9,7 +9,7 @@
 
 A brief, one-to-two sentence summary of what your project does.
 
-*   📄 **Full English Documentation:** See [docs/en/README.md](docs/en/README.md).
+*   📄 **Server part - install and setup:** See [docs/en/README.md](docs/en/README.md).
 
 ---
 
@@ -17,4 +17,4 @@ A brief, one-to-two sentence summary of what your project does.
 
 Краткое описание того, что делает ваш проект (одно-два предложения).
 
-*   📄 **Полная документация на русском:** См. [docs/ru/README.md](docs/ru/README.md).
+*   📄 **Серверная часть - настройка и установка:** См. [docs/ru/README.md](docs/ru/README.md).
