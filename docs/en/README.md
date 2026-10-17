@@ -165,28 +165,28 @@ CONFIG="config/settings.json" PORT=8085 HOST="127.0.0.1" /usr/lib/jvm/java-21-op
 version: '3.8'
 
 services:
-kotlin-server:
-image: zzhekaa/dandelionserver:latest
-container_name: dandelion-server
-ports:
-- "127.0.0.1:8085:8085"
-environment:
-- PORT=8085
-- HOST=0.0.0.0
-- CONFIG=/app/config/settings.json
-networks:
-dandelion-net:
-ipv4_address: 172.18.0.100
-volumes:
-- ./config:/app/config
-restart: unless-stopped
+  kotlin-server:
+    image: zzhekaa/dandelionserver:latest
+    container_name: dandelion-server
+    ports:
+      - "127.0.0.1:8085:8085"
+    environment:
+      - PORT=8085
+      - HOST=0.0.0.0
+      - CONFIG=/app/config/settings.json
+    networks:
+      dandelion-net:
+        ipv4_address: 172.18.0.100
+    volumes:
+      - ./config:/app/config
+    restart: unless-stopped
 
 networks:
-dandelion-net:
-driver: bridge
-ipam:
-config:
-- subnet: 172.18.0.0/16
+  dandelion-net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.18.0.0/16
 
 ```
 
