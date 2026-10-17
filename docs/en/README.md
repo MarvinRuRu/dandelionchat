@@ -52,30 +52,29 @@ Register a domain for your messenger, for example, `dandelion-test.com`.
 Example Apache Reverse Proxy configuration file `/etc/apache2/sites-available/dandelion-test.com.conf` (for server port `8085`, domain `dandelion-test.com`, and a `letsencrypt` certificate):
 ```
 <IfModule mod_ssl.c>
-<VirtualHost *:443>
-ServerName dandelion-test.com
+    <VirtualHost *:443>
+        ServerName dandelion-test.com
 
-SSLEngine on
+        SSLEngine on
 
-RewriteEngine on
-RewriteCond %{HTTP:Upgrade} =websocket [NC]
-RewriteRule ^/(.*) ws://127.0.0.1:8085/$1 [P,L]
+        RewriteEngine On
+        RewriteCond %{HTTP:Upgrade} =websocket [NC] 
+        RewriteRule ^/(.*) ws://127.0.0.1:8085/$1 [P,L]
 
-ProxyPreserveHost on
-ProxyPass / http://127.0.0.1:8085/
-ProxyPassReverse / http://127.0.0.1:8085/
+        ProxyPreserveHost On
+        ProxyPass / http://127.0.0.1:8085/
+        ProxyPassReverse / http://127.0.0.1:8085/
 
-RequestHeader Set X-Forwarded-Proto "https"
+        RequestHeader set X-Forwarded-Proto "https"
+        
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
+        Include /etc/letsencrypt/options-ssl-apache.conf
 
-ErrorLog ${APACHE_LOG_DIR}/error.log
-CustomLog ${APACHE_LOG_DIR}/access.log combined
-Include /etc/letsencrypt/options-ssl-apache.conf
-
-SSLCertificateFile /etc/letsencrypt/live/dandelion-test.com/fullchain.pem
-SSLCertificateKeyFile /etc/letsencrypt/live/dandelion-test.com/privkey.pem
-</VirtualHost>
+        SSLCertificateFile /etc/letsencrypt/live/dandelion-test.com/fullchain.pem
+        SSLCertificateKeyFile /etc/letsencrypt/live/dandelion-test.com/privkey.pem
+    </VirtualHost>
 </IfModule>
-
 ```
 
 #### 4. Fill in the server configuration file settings.json
