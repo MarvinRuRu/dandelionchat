@@ -111,6 +111,20 @@ Android package name: `zh.dandelion.client.full`
         },
         "firebase_server_private_key_path": "/app/config/dandelion-test-12fc4fb6-firebase-adminsdk-fbsvc-e12cf3fd45.json"
     },
+    "first_run_settings": {
+    	"create_users": [
+    	    { "login": "admin", "password": "12345", "is_admin": true },
+    	    { "login": "user1", "password": "12345", "is_admin": false },
+    	    { "login": "user2", "password": "12345", "is_admin": false },
+    	    { "login": "user3", "password": "12345", "is_admin": false },
+    	    { "login": "user4", "password": "12345", "is_admin": false },
+    	    { "login": "user5", "password": "12345", "is_admin": false },
+    	    { "login": "user6", "password": "12345", "is_admin": false },
+    	    { "login": "user7", "password": "12345", "is_admin": false },
+    	    { "login": "user8", "password": "12345", "is_admin": false },
+    	    { "login": "user9", "password": "12345", "is_admin": false }
+    	]
+    },
     "test_bots": {
         "bots_on": 1,
         "bots_reactions_on": 1,
@@ -123,6 +137,7 @@ Android package name: `zh.dandelion.client.full`
 *   **jwt:** параметры генерации JSON Web Token для мобильных клиентов.
 *   **server_instance_id:** идентификатор сервера для случая когда у вас настроено несколько серверов, вы переключаетесь между ними и клиент должен понимать какие данные к какому серверу относятся.
 *   **notifications:** параметры для получения Google Firebase оповещений Android и IOS мобильных приложений из п.2.
+*   **first_run_settings:** настройки первого запуска - создание пользователей.
 *   **test_bots:** включает ботов, при помощи которых можно протестировать работу сервера. При добавлении в чат боты отвечают случайными сообщениями и пишут при длительной тишине в чате.
 
 
