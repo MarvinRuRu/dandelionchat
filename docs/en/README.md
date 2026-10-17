@@ -43,13 +43,13 @@ IOS Team ID: DC7N64S349
 
 Android package name: zh.dandelion.client.full
 
-2.2 Download the Firebase Server Private Key to a directory accessible to the server (for example, to the directory with the settings.json configuration file from step 4).
+2.2 Download the `Firebase Server Private Key` to a directory accessible to the server (for example, to the directory with the `settings.json` configuration file from step 4).
 
 #### 3. Set up an Apache Reverse Proxy site for the server
 
 Register a domain for your messenger, for example, `dandelion-test.com`.
 
-Example Apache Reverse Proxy configuration file /etc/apache2/sites-available/dandelion-test.com.conf (for server port 8085, domain dandelion-test.com, and a letsencrypt certificate):
+Example Apache Reverse Proxy configuration file `/etc/apache2/sites-available/dandelion-test.com.conf` (for server port `8085`, domain `dandelion-test.com`, and a `letsencrypt` certificate):
 ```
 <IfModule mod_ssl.c>
 <VirtualHost *:443>
