@@ -83,56 +83,56 @@ SSLCertificateKeyFile /etc/letsencrypt/live/dandelion-test.com/privkey.pem
 Example (for running the server from a Docker container, so mariadb host is `172.17.0.1`):
 ```json
 {
-"db": {
-"user": "mariadb_dandelion_user", 
-"password": "*** mariadb password ***", 
-"host": "172.17.0.1", 
-"port": 3306, 
-"database": "dandelion_db", 
-"ssl": 0 
-}, 
-"jwt": { 
-"secret": "*** your JSON Web Token secret ***", 
-"issuer": "https://dandelion-test.com", 
-"audience": "https://dandelion-test.com", 
-"realm": "https://dandelion-test.com" 
-}, 
-"server_instance_id": "*** you server instance id ***", 
-"notifications": { 
-"firebase_project_android": { 
-"sender_id": "567891234567", 
-"api_key": "AIsdSyBCYBUFb1X2Fl3jDairbKVVaRpa4-_Ts_H", 
-"app_id": "1:567891234567:android:1beab2c3f4f567b89cc12b", 
-"project_id": "dandelion-test-12fc4fb6" 
-}, 
-"firebase_project_ios": { 
-"sender_id": "567891234567", 
-"api_key": "AISsdBCYBUFb1X7Fl2jDairbKVVaRpa3-_Ts_H", 
-"app_id": "1:567891234567:ios:f123456f7891d2345cc67b", 
-"project_id": "dandelion-test-12fc4fb6" 
-}, 
-"firebase_server_private_key_path": "/app/config/dandelion-test-12fc4fb6-firebase-adminsdk-fbsvc-e12cf3fd45.json" 
-}, 
-"first_run_settings": { 
-"create_users": [ 
-{ "login": "admin", "password": "12345", "is_admin": true }, 
-{ "login": "user1", "password": "12345", "is_admin": false }, 
-{ "login": "user2", "password": "12345", "is_admin": false }, 
-{ "login": "user3", "password": "12345", "is_admin": false }, 
-{ "login": "user4", "password": "12345", "is_admin": false }, 
-{ "login": "user5", "password": "12345", "is_admin": false }, 
-{ "login": "user6", "password": "12345", "is_admin": false }, 
-{ "login": "user7", "password": "12345", "is_admin": false },
-{ "login": "user8", "password": "12345", "is_admin": false },
-{ "login": "user9", "password": "12345", "is_admin": false }
-]
-},
-"test_bots": {
-"bots_on": 1,
-"bots_reactions_on": 1,
-"create_bots_if_not_exist": 1,
-"bots_logins_to_start": [ "user1", "user2", "user3", "user4", "user5", "user6", "user7", "user8", "user9", "user10" ]
-}
+    "db": {
+        "user": "mariadb_dandelion_user",
+        "password": "*** mariadb password ***",
+        "host": "172.17.0.1",
+        "port": 3306,
+        "database": "dandelion_db",
+        "ssl": 0
+    },
+    "jwt": {
+        "secret": "*** your JSON Web Token secret ***",
+        "issuer": "https://dandelion-test.com",
+        "audience": "https://dandelion-test.com",
+        "realm": "https://dandelion-test.com"
+    },
+    "server_instance_id": "*** you server instance id ***",
+    "notifications": {
+        "firebase_project_android": {
+            "sender_id": "567891234567",
+            "api_key": "AIsdSyBCYBUFb1X2Fl3jDairbKVVaRpa4-_Ts_H",
+            "app_id": "1:567891234567:android:1beab2c3f4f567b89cc12b",
+            "project_id": "dandelion-test-12fc4fb6"
+        },
+        "firebase_project_ios": {
+            "sender_id": "567891234567",
+            "api_key": "AISsdBCYBUFb1X7Fl2jDairbKVVaRpa3-_Ts_H",
+            "app_id": "1:567891234567:ios:f123456f7891d2345cc67b",
+            "project_id": "dandelion-test-12fc4fb6"
+        },
+        "firebase_server_private_key_path": "/app/config/dandelion-test-12fc4fb6-firebase-adminsdk-fbsvc-e12cf3fd45.json"
+    },
+    "first_run_settings": {
+    	"create_users": [
+    	    { "login": "admin", "password": "12345", "is_admin": true },
+    	    { "login": "user1", "password": "12345", "is_admin": false },
+    	    { "login": "user2", "password": "12345", "is_admin": false },
+    	    { "login": "user3", "password": "12345", "is_admin": false },
+    	    { "login": "user4", "password": "12345", "is_admin": false },
+    	    { "login": "user5", "password": "12345", "is_admin": false },
+    	    { "login": "user6", "password": "12345", "is_admin": false },
+    	    { "login": "user7", "password": "12345", "is_admin": false },
+    	    { "login": "user8", "password": "12345", "is_admin": false },
+    	    { "login": "user9", "password": "12345", "is_admin": false }
+    	]
+    },
+    "test_bots": {
+        "bots_on": 1,
+        "bots_reactions_on": 1,
+        "create_bots_if_not_exist": 1,
+        "bots_logins_to_start": [ "user1", "user2", "user3", "user4", "user5", "user6", "user7", "user8", "user9", "user10" ]
+    }
 }
 ```
 * **db:** Database connection parameters.
