@@ -35,13 +35,13 @@ If you'll be accessing the database from a Docker container with a fixed IP (in 
 
 2.1 Prepare the Google Firebase parameters for Android and iOS, which will be used later in step 4. See the online documentation.
 
-IOS App Store ID: 6788429394
+IOS App Store ID: `6788429394`
 
-IOS Bundle ID: zh.dandelion.client
+IOS Bundle ID: `zh.dandelion.client`
 
-IOS Team ID: DC7N64S349
+IOS Team ID: `DC7N64S349`
 
-Android package name: zh.dandelion.client.full
+Android package name: `zh.dandelion.client.full`
 
 2.2 Download the `Firebase Server Private Key` to a directory accessible to the server (for example, to the directory with the `settings.json` configuration file from step 4).
 
