@@ -13,7 +13,7 @@ Closed source. Binaries are available for free download and deployment.
 * **Soft Delete:** Deleting messages, chats, and reactions does not physically delete them from the system. The information is marked with a 'deleted' flag in the database and is stored to ensure compliance with applicable laws.
 
 ### ⚠️ Legal Disclaimer
-> **IMPORTANT:** Before using the messenger, we strongly recommend that you review and strictly comply with your country's laws and local regulations governing messengers and digital communications.** Depending on your jurisdiction, launching or using independent messaging platforms may require compliance with data retention, licensing, or mandatory user identification laws. The developers are not responsible for any unauthorized use of the software.
+> **IMPORTANT:** Before using the messenger, we strongly recommend that you review and strictly comply with your **country's laws and local regulations governing messengers and digital communications**. Depending on your jurisdiction, launching or using independent messaging platforms may require compliance with data retention, licensing, or mandatory user identification laws. The developers are not responsible for any unauthorized use of the software.
 
 * ### 📄 **Client**
 
