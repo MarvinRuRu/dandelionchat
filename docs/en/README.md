@@ -1,7 +1,7 @@
 ## Dandelion Messenger
 
 ### 📝 Project Description
-Client-server messenger application. Developed for educational purposes and as a portfolio.
+Client-server messenger application. Developed for **educational** purposes and as a **portfolio**.
 
 Closed source. Binaries are available for free download and deployment.
 
