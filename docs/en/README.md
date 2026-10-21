@@ -39,11 +39,11 @@ If you'll be accessing the database from a Docker container with a fixed IP (in 
 
 IOS App Store ID: `6788429394`
 
-IOS Bundle ID: `ru.dandelion.client`
+IOS Bundle ID: `zh.dandelion.client`
 
 IOS Team ID: `DC7N64S349`
 
-Android package name: `zh.dandelion.client.full`
+Android package name: `ru.dandelion.client`
 
 2.2 Download the `Firebase Server Private Key` to a directory accessible to the server (for example, to the directory with the `settings.json` configuration file from step 4).
 
