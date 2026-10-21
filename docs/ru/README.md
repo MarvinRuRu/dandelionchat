@@ -16,6 +16,8 @@
 
 *   ### 📄 **Клиент**
 
+*   **Google play:** https://play.google.com/store/apps/details?id=ru.dandelion.client
+
 *   ### 📄 **Сервер**
 
 #### Ключевые Особенности
