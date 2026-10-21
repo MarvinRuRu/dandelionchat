@@ -40,7 +40,7 @@ IOS App Store ID: `6788429394`
 IOS Bundle ID: `zh.dandelion.client`  
 IOS Team ID: `DC7N64S349`  
   
-Android package name: `zh.dandelion.client.full`
+Android package name: `ru.dandelion.client`
 
 
 2.2 Скачать `Firebase Server Private Key` в доступную для сервера директорию (например в директорию с конфигурационным файлом `settings.json` из п.4).
