@@ -17,6 +17,8 @@ Closed source. Binaries are available for free download and deployment.
 
 * ### 📄 **Client**
 
+*   **Google play:** https://play.google.com/store/apps/details?id=ru.dandelion.client
+
 * ### 📄 **Server**
 
 #### Key Features
