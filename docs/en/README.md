@@ -39,7 +39,7 @@ If you'll be accessing the database from a Docker container with a fixed IP (in 
 
 IOS App Store ID: `6788429394`
 
-IOS Bundle ID: `zh.dandelion.client`
+IOS Bundle ID: `ru.dandelion.client`
 
 IOS Team ID: `DC7N64S349`
 
