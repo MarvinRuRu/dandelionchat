@@ -18,6 +18,7 @@ Closed source. Binaries are available for free download and deployment.
 * ### 📄 **Client**
 
 *   **Google play:** https://play.google.com/store/apps/details?id=ru.dandelion.client
+*   **Linux** 📦 **[JVM client](https://github.com/MarvinRuRu/dandelionchat/releases/)** (Tested on Ubuntu, launcher /opt/dandelion-client/bin/dandelion-client)
 
 * ### 📄 **Server**
 
