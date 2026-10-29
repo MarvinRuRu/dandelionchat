@@ -16,7 +16,7 @@
 
 *   ### 📄 **Клиент**
 
-*   **Google play:** https://play.google.com/store/apps/details?id=ru.dandelion.client
+*   **Android: Google play:** https://play.google.com/store/apps/details?id=ru.dandelion.client
 *   **Linux** 📦 **[JVM клиент](https://github.com/MarvinRuRu/dandelionchat/releases/)** (Протестировано на Ubuntu, запуск /opt/dandelion-client/bin/dandelion-client)
 
 *   ### 📄 **Сервер**
