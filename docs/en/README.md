@@ -1,4 +1,7 @@
-## Dandelion Messenger
+<div align="center">
+  <img src="./../ios_512.png" height="50" style="vertical-align: middle; display: inline-block;" alt="Logo">
+  <h2 style="display: inline-block;">Dandelion Messenger</h2>
+</div>
 
 ### 📝 Project Description
 Client-server messenger application. Developed for **educational** purposes and as a **portfolio**.
