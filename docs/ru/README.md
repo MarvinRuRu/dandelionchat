@@ -2,6 +2,12 @@
   <img src="./../ios_512.png" width="100px" alt="Мессенджер Одуванчик">
   <span>Мессенджер Одуванчик</span>
 </div>
+<table>
+  <tr>
+    <td><img src="./../ios_512.png" width="100px" alt="Мессенджер Одуванчик"></td>
+    <td valign="middle"><span>Мессенджер Одуванчик</span></td>
+  </tr>
+</table>
 
 ## Мессенджер Одуванчик
 
