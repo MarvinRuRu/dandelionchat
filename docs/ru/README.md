@@ -1,6 +1,6 @@
-<p align="center">
+<div style="background-color: #2b2b2b; text-align: center; padding: 20px 0;">
   <img src="./../ios_512.png" width="100px" alt="Мессенджер Одуванчик">
-</p>
+</div>
 
 ## Мессенджер Одуванчик
 
