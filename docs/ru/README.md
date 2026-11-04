@@ -1,8 +1,14 @@
 <div align="center">
-  <h2>
-    <img src="./../ios_512.png" style="height: 1.2em; vertical-align: middle;padding:0;margin:0" alt="Логотип">
-    <span>Мессенджер Одуванчик</span>
-  </h2>
+  <table border="0" cellpadding="0" cellspacing="0" style="border: none; border-collapse: collapse; background: transparent;">
+    <tr style="border: none; background: transparent;">
+      <td valign="middle" style="border: none; padding-right: 8px; background: transparent;">
+        <img src="./../ios_512.png" height="28" style="display: block;" alt="Логотип">
+      </td>
+      <td valign="middle" style="border: none; background: transparent;">
+        <h2 style="margin: 0; padding: 0; border: none;">Мессенджер Одуванчик</h2>
+      </td>
+    </tr>
+  </table>
 </div>
 
 ## Мессенджер Одуванчик
