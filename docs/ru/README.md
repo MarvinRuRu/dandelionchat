@@ -1,6 +1,6 @@
 <div align="center">
   <img src="./../ios_512.png" height="32" style="vertical-align: middle; display: inline-block;" alt="Логотип">
-  <h2>Мессенджер Одуванчик</h2>
+  <h2 style="display: inline-block;">Мессенджер Одуванчик</h2>
 </div>
 
 ## Мессенджер Одуванчик
