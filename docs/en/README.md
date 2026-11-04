@@ -9,6 +9,7 @@ Closed source. Binaries are available for free download and deployment.
 * **User Chats:** Chats for 2 or more users.
 * **Message Reactions and Comments**
 * **Comment Tracking:** Tracks the last 500 messages on which a user has left a comment.
+* **News channel mode, disabling comments:** The option to restrict posting to the channel creator only, and the ability to disable comments on posts.
 * **No open registration:** User accounts are created exclusively by the system administrator.
 * **Complaints, blocks:** Complaints regarding user actions, blocking of users.
 * **Soft Delete:** Deleting messages, chats, and reactions does not physically delete them from the system. The information is marked with a 'deleted' flag in the database and is stored to ensure compliance with applicable laws.
