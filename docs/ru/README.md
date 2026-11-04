@@ -1,5 +1,5 @@
 <table style="border-collapse: collapse; border: none;">
-  <tr>
+  <tr style="border: none;">
     <td><img src="./../ios_512.png" width="100px" alt="Мессенджер Одуванчик"></td>
     <td valign="middle"><b>Мессенджер Одуванчик</b></td>
   </tr>
