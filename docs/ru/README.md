@@ -1,7 +1,7 @@
 <table style="border-collapse: collapse; border: none;">
   <tr style="border: none;">
-    <td><img src="./../ios_512.png" width="100px" alt="Мессенджер Одуванчик"></td>
-    <td valign="middle"><b>Мессенджер Одуванчик</b></td>
+    <td style="border: none; padding: 10px;"><img src="./../ios_512.png" width="100px" alt="Мессенджер Одуванчик"></td>
+    <td style="border: none; padding: 10px;" valign="middle"><b>Мессенджер Одуванчик</b></td>
   </tr>
 </table>
 
