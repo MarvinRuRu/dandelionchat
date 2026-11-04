@@ -1,4 +1,6 @@
-<img src="./../ios_512.png" width="100px" alt="Мессенджер Одуванчик">
+<p align="center">
+  <img src="./../ios_512.png" width="100px" alt="Мессенджер Одуванчик">
+</p>
 
 ## Мессенджер Одуванчик
 
