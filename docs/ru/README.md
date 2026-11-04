@@ -1,6 +1,9 @@
 <div align="center" style="background-color: #cccccc;">
   <img src="./../ios_512.png" width="100px" alt="Мессенджер Одуванчик">
 </div>
+<table bgcolor="#cccccc" align="center">
+  <tr><td><img src="./../ios_512.png" width="100"></td></tr>
+</table>
 
 ## Мессенджер Одуванчик
 
