@@ -1,11 +1,7 @@
-<div style="display: flex; align-items: center; gap: 15px;">
-  <img src="./../ios_512.png" width="100px" alt="Мессенджер Одуванчик">
-  <span>Мессенджер Одуванчик</span>
-</div>
-<table>
+<table style="border-collapse: collapse; border: none;">
   <tr>
     <td><img src="./../ios_512.png" width="100px" alt="Мессенджер Одуванчик"></td>
-    <td valign="middle"><span>Мессенджер Одуванчик</span></td>
+    <td valign="middle"><b>Мессенджер Одуванчик</b></td>
   </tr>
 </table>
 
