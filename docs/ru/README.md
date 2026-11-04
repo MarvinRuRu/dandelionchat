@@ -1,9 +1,4 @@
-<table style="border-collapse: collapse; border: none;">
-  <tr style="border: none;">
-    <td style="border: none;"><img src="./../ios_512.png" width="100px" alt="Мессенджер Одуванчик"></td>
-    <td style="border: none;" valign="middle"><h2 tabindex="-1" class="heading-element" dir="auto">Мессенджер Одуванчик</h2></td>
-  </tr>
-</table>
+<img src="./../ios_512.png" width="100px" alt="Мессенджер Одуванчик">
 
 ## Мессенджер Одуванчик
 
