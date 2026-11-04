@@ -1,6 +1,6 @@
 <div style="display: flex; align-items: center; gap: 15px;">
   <img src="./../ios_512.png" width="100px" alt="Мессенджер Одуванчик">
-  ## Мессенджер Одуванчик
+  <span>Мессенджер Одуванчик</span>
 </div>
 
 ## Мессенджер Одуванчик
