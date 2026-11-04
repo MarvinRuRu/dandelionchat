@@ -1,4 +1,4 @@
-<div align="center">
+<div align="center" style="background-color: #2b2b2b;">
   <img src="./../ios_512.png" width="100px" alt="Мессенджер Одуванчик">
 </div>
 
