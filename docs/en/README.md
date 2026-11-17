@@ -208,15 +208,18 @@ You can optionally enable the exchange of files attached to messages. To do this
 
 Add the following section to the root of the server configuration file:
 ```json
-"files_server_settings": {
-"store_files_on": 1,
-"server_host": "dandelion-test-files.com",
-"server_port": 443,
-"server_jwt_secret": "bfcjJe+xSa1IPsszJlvFRzbp78-I6HeqP54SaY713b4=",
-"max_file_size_mb": 0,
-"max_files_count": 0,
-"file_types_allowed": []
+...
+"files_server_settings":
+{
+  "store_files_on": 1,
+  "server_host": "dandelion-test-files.com",
+  "server_port": 443,
+  "server_jwt_secret": "bfcjJe+xSa1IPsszJlvFRzbp78-I6HeqP54SaY713b4=",
+  "max_file_size_mb": 0,
+  "max_files_count": 0,
+  "file_types_allowed": []
 }
+...
 ```
 *   **store_files_on:** enables/disables file transfer.
 *   **server_host:** the host address of the file server.
