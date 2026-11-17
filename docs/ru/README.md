@@ -210,6 +210,7 @@ docker-compose up -d
 
 В корневую секцию файла натроек сервера сообщений необходимо добавить секцию:
 ```json
+....
 "files_server_settings": {
 	"store_files_on": 1,
 	"server_host": "dandelion-test-files.com",
@@ -219,6 +220,7 @@ docker-compose up -d
 	"max_files_count": 0,
 	"file_types_allowed": []
 }
+...
 ````
 *   **store_files_on:** передача файлов вкл/выкл.
 *   **server_host:** хост файлового сервера.
