@@ -202,3 +202,25 @@ Running a container from a directory with docker-compose.yml:
 ```sh
 docker-compose up -d
 ```
+#### 6 Configuring File Transfer
+
+You can optionally enable the exchange of files attached to messages. To do this, you must install and run the 📦 [File Server](https://github.com/MarvinRuRu/dandelionchat-filesserver).
+Add the following section to the root of the server configuration file:
+```json
+"files_server_settings": {
+"store_files_on": 1,
+"server_host": "dandelion-test-files.com",
+"server_port": 443,
+"server_jwt_secret": "bfcjJe+xSa1IPsszJlvFRzbp78-I6HeqP54SaY713b4=",
+"max_file_size_mb": 0,
+"max_files_count": 0,
+"file_types_allowed": []
+}
+```
+*   **store_files_on:** enables/disables file transfer.
+*   **server_host:** the host address of the file server.
+*   **server_port:** the port used by the file server.
+*   **server_jwt_secret:** a symmetric encryption key shared between the file server and the message server. It must be identical for both servers.
+*   **max_file_size_mb:** the maximum allowed size for a transferred file.
+*   **max_files_count:** currently unused.
+*   **file_types_allowed:** currently unused.
