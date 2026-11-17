@@ -205,6 +205,7 @@ docker-compose up -d
 #### 6 Configuring File Transfer
 
 You can optionally enable the exchange of files attached to messages. To do this, you must install and run the 📦 [File Server](https://github.com/MarvinRuRu/dandelionchat-filesserver).
+
 Add the following section to the root of the server configuration file:
 ```json
 "files_server_settings": {
