@@ -225,6 +225,6 @@ Add the following section to the root of the message server configuration file:
 *   **server_host:** the host address of the file server.
 *   **server_port:** the port used by the file server.
 *   **server_jwt_secret:** a symmetric encryption key shared between the file server and the message server. It must be identical for both servers.
-*   **max_file_size_mb:** the maximum allowed size for a transferred file.
+*   **max_file_size_mb:** currently unused.
 *   **max_files_count:** currently unused.
 *   **file_types_allowed:** currently unused.
