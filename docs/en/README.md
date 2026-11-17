@@ -11,6 +11,7 @@ Closed source. Binaries are available for free download and deployment.
 ### 🏗️ Features
 * **User Chats:** Chats for 2 or more users.
 * **Message Reactions and Comments**
+* **File transfer:** Attaching files to messages (if enabled on the server)
 * **Comment Tracking:** Tracks the last 500 messages on which a user has left a comment.
 * **News channel mode, disabling comments:** The option to restrict posting to the channel creator only, and the ability to disable comments on posts.
 * **No open registration:** User accounts are created exclusively by the system administrator.
@@ -209,8 +210,7 @@ You can optionally enable the exchange of files attached to messages. To do this
 Add the following section to the root of the server configuration file:
 ```json
 ...
-"files_server_settings":
-{
+"files_server_settings": {
   "store_files_on": 1,
   "server_host": "dandelion-test-files.com",
   "server_port": 443,
