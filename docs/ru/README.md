@@ -241,3 +241,57 @@ docker-compose up -d
 *   **max_file_size_mb:** временно не используется.
 *   **max_files_count:** временно не используется.
 *   **file_types_allowed:** временно не используется.
+
+**docker-compose.yml** для запуска сервера на порту `8085`, на фиксированном ip `172.18.0.100` виртуальной сети. 
+*   предполагается, что конфигурационный файл сервера сообщений лежит по пути `config/settings.json` относительно `docker-compose.yml`
+*   предполагается, что конфигурационный файл сервера файлов лежит по пути `config_files/settings.json` относительно `docker-compose.yml` 
+*   предполагается, что директория  `files` существует относительно `docker-compose.yml` и `files_base_path` в `settings.json` сервера файлов установлен как `/app/files`
+<details>
+<summary>Показать</summary>
+
+```yaml
+version: '3.8'
+
+services:
+  messages-server:
+    image: zzhekaa/dandelionserver:latest
+    container_name: dandelion-server
+    ports:
+      - "127.0.0.1:8085:8085"
+    environment:
+      - PORT=8085
+      - HOST=0.0.0.0
+      - CONFIG=/app/config/settings.json
+    networks:
+      dandelion-net:
+        ipv4_address: 172.18.0.100
+    volumes:
+      - ./config:/app/config
+    restart: unless-stopped
+    
+  files-server:
+    image: zzhekaa/dandelionserver_files:latest
+    container_name: dandelion-files-server
+    ports:
+      - "127.0.0.1:8086:8086"
+    environment:
+      - PORT=8086
+      - HOST=0.0.0.0
+      - CONFIG=/app/config/settings.json
+    networks:
+      dandelion-net:
+        ipv4_address: 172.18.0.101
+    volumes:
+      - ./config_files:/app/config
+      - ./files:/app/files
+    restart: unless-stopped    
+
+networks:
+  dandelion-net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.18.0.0/16
+
+````
+</details>
