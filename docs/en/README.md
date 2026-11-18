@@ -89,6 +89,8 @@ Example Apache Reverse Proxy configuration file `/etc/apache2/sites-available/da
 #### 4. Fill in the server configuration file settings.json
 
 Example (for running the server from a Docker container, so mariadb host is `172.17.0.1`):
+<details>
+<summary>Показать</summary>
 ```json
 {
     "db": {
@@ -143,6 +145,8 @@ Example (for running the server from a Docker container, so mariadb host is `172
     }
 }
 ```
+</details>
+  
 * **db:** Database connection parameters.
 * **jwt:** JSON Web Token generation parameters for mobile clients.
 * **server_instance_id:** Server ID for when you have multiple servers configured, you switch between them, and the client needs to understand which data belongs to which server.
