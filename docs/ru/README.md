@@ -173,7 +173,7 @@ CONFIG="config/settings.json" PORT=8085 HOST="127.0.0.1" /usr/lib/jvm/java-21-op
 version: '3.8'
 
 services:
-  kotlin-server:
+  messages-server:
     image: zzhekaa/dandelionserver:latest
     container_name: dandelion-server
     ports:
@@ -223,7 +223,7 @@ docker-compose up -d
 ...
 ````
 *   **store_files_on:** передача файлов вкл/выкл.
-*   **server_host:** хост файлового сервера. (В примере предполагается, что для файлового сервера зарегистрирован домен dandelion-test-files.com)
+*   **server_host:** хост файлового сервера. (в примере предполагается, что для файлового сервера зарегистрирован домен `dandelion-test-files.com`)
 *   **server_port:** порт файлового сервера.
 *   **server_jwt_secret:** симметричный ключ шифрования сервера файлов и сервера сообщений. Одинаковый для обоих серверов.
 *   **max_file_size_mb:** временно не используется.
