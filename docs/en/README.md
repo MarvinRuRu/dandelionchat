@@ -240,3 +240,18 @@ Add the following section to the root of the message server configuration file:
 *   **max_file_size_mb:** currently unused.
 *   **max_files_count:** currently unused.
 *   **file_types_allowed:** currently unused.
+
+**docker-compose.yml**  for running server with files support on port `8085`(files server on port 8086), on fixed ip `172.18.0.100` (files server on ip `172.18.0.101`) of virtual network. 
+*   It is assumed that the configuration file for the messaging server is located at `config/settings.json` relative to `docker-compose.yml`.
+*   It is assumed that the configuration file for the file server is located at `config_files/settings.json` relative to `docker-compose.yml`.
+*   It is assumed that a `files` directory exists relative to `docker-compose.yml`, and that the `files_base_path` in the file server's `settings.json` is set to `/app/files`.
+<details>
+<summary>Show</summary>
+
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.18.0.0/16
+
+````
+</details>
