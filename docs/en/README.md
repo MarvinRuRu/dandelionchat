@@ -222,8 +222,8 @@ Add the following section to the root of the message server configuration file:
 ...
 ```
 *   **store_files_on:** enables/disables file transfer.
-*   **server_host:** the host address of the file server.
-*   **server_port:** the port used by the file server.
+*   **server_host:** host address of the file server. (example assumes that the domain dandelion-test-files.com has been registered for the file server.)
+*   **server_port:** port used by the file server.
 *   **server_jwt_secret:** a symmetric encryption key shared between the file server and the message server. It must be identical for both servers.
 *   **max_file_size_mb:** currently unused.
 *   **max_files_count:** currently unused.
