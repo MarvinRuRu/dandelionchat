@@ -57,6 +57,9 @@ Android package name: `ru.dandelion.client`
 Зарегистрировать домен для вашего мессенджера, например `dandelion-test.com`.  
 
 Пример Apache Reverse Proxy конфигурации `/etc/apache2/sites-available/dandelion-test.com.conf` (для порта `8085` сервера, домена `dandelion-test.com` с `letsencrypt` сертификатом):
+<details>
+<summary>Показать</summary>
+
 ```
 <IfModule mod_ssl.c>
     <VirtualHost *:443>
@@ -84,10 +87,14 @@ Android package name: `ru.dandelion.client`
 </IfModule>
 
 ```
+</details>
 
 #### 4. Заполнить конфигурационный файл сервера settings.json
 
 Пример (для запуска сервера из docker контейнера, потому mariadb host `172.17.0.1`):
+<details>
+<summary>Показать</summary>
+	
 ```json
 {
     "db": {
@@ -142,6 +149,7 @@ Android package name: `ru.dandelion.client`
     }
 }
 ```
+</details>
 *   **db:** параметры подключения к БД.
 *   **jwt:** параметры генерации JSON Web Token для мобильных клиентов.
 *   **server_instance_id:** идентификатор сервера для случая когда у вас настроено несколько серверов, вы переключаетесь между ними и клиент должен понимать какие данные к какому серверу относятся.
@@ -168,6 +176,8 @@ CONFIG="config/settings.json" PORT=8085 HOST="127.0.0.1" /usr/lib/jvm/java-21-op
 #### 5.2 Запуск сервера из docker контейнера
 
 **docker-compose.yml** для запуска сервера на порту `8085`, на фиксированном ip `172.18.0.100` виртуальной сети. Предполагается, что конфигурационный файл сервера лежит по пути `config/settings.json` относительно `docker-compose.yml`:
+<details>
+<summary>Показать</summary>
 
 ```yaml
 version: '3.8'
@@ -197,6 +207,7 @@ networks:
         - subnet: 172.18.0.0/16
 
 ```
+</details>
 
 Запуск контейнера из директории с docker-compose.yml:
 
