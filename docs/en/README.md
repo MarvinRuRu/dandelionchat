@@ -91,6 +91,7 @@ Example Apache Reverse Proxy configuration file `/etc/apache2/sites-available/da
 Example (for running the server from a Docker container, so mariadb host is `172.17.0.1`):
 <details>
 <summary>Показать</summary>
+  
 ```json
 {
     "db": {
