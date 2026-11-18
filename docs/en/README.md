@@ -173,7 +173,7 @@ CONFIG="config/settings.json" PORT=8085 HOST="127.0.0.1" /usr/lib/jvm/java-21-op
 version: '3.8'
 
 services:
-  kotlin-server:
+  messages-server:
     image: zzhekaa/dandelionserver:latest
     container_name: dandelion-server
     ports:
@@ -222,7 +222,7 @@ Add the following section to the root of the message server configuration file:
 ...
 ```
 *   **store_files_on:** enables/disables file transfer.
-*   **server_host:** host address of the file server. (example assumes that the domain dandelion-test-files.com has been registered for the file server.)
+*   **server_host:** host address of the file server. (example assumes that the domain `dandelion-test-files.com` has been registered for the file server.)
 *   **server_port:** port used by the file server.
 *   **server_jwt_secret:** a symmetric encryption key shared between the file server and the message server. It must be identical for both servers.
 *   **max_file_size_mb:** currently unused.
