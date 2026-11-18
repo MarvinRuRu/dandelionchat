@@ -94,7 +94,7 @@ Android package name: `ru.dandelion.client`
 Пример (для запуска сервера из docker контейнера, потому mariadb host `172.17.0.1`):
 <details>
 <summary>Показать</summary>
-	
+
 ```json
 {
     "db": {
