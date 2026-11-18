@@ -248,6 +248,45 @@ Add the following section to the root of the message server configuration file:
 <details>
 <summary>Show</summary>
 
+```yaml
+version: '3.8'
+
+services:
+  messages-server:
+    image: zzhekaa/dandelionserver:latest
+    container_name: dandelion-server
+    ports:
+      - "127.0.0.1:8085:8085"
+    environment:
+      - PORT=8085
+      - HOST=0.0.0.0
+      - CONFIG=/app/config/settings.json
+    networks:
+      dandelion-net:
+        ipv4_address: 172.18.0.100
+    volumes:
+      - ./config:/app/config
+    restart: unless-stopped
+    
+  files-server:
+    image: zzhekaa/dandelionserver_files:latest
+    container_name: dandelion-files-server
+    ports:
+      - "127.0.0.1:8086:8086"
+    environment:
+      - PORT=8086
+      - HOST=0.0.0.0
+      - CONFIG=/app/config/settings.json
+    networks:
+      dandelion-net:
+        ipv4_address: 172.18.0.101
+    volumes:
+      - ./config_files:/app/config
+      - ./files:/app/files
+    restart: unless-stopped    
+
+networks:
+  dandelion-net:
     driver: bridge
     ipam:
       config:
