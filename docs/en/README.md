@@ -176,7 +176,7 @@ CONFIG="config/settings.json" PORT=8085 HOST="127.0.0.1" /usr/lib/jvm/java-21-op
 
 #### 5.2 Starting the server from a Docker container
 
-**docker-compose.yml** to start the server on port 8085, on a fixed IP address of 172.18.0.100 in the virtual network. It is assumed that the server configuration file is located at `config/settings.json` relative to `docker-compose.yml`:
+**docker-compose.yml** example to start the server on port 8085, on a fixed IP address of 172.18.0.100 in the virtual network. It is assumed that the server configuration file is located at `config/settings.json` relative to `docker-compose.yml`:
 <details>
 <summary>Show</summary>
   
@@ -241,7 +241,7 @@ Add the following section to the root of the message server configuration file:
 *   **max_files_count:** currently unused.
 *   **file_types_allowed:** currently unused.
 
-**docker-compose.yml**  for running server with files support on port `8085`(files server on port 8086), on fixed ip `172.18.0.100` (files server on ip `172.18.0.101`) of virtual network. 
+**docker-compose.yml** example to start the server with files support on port `8085`(files server on port 8086), on fixed ip `172.18.0.100` (files server on ip `172.18.0.101`) of virtual network. 
 *   It is assumed that the configuration file for the messaging server is located at `config/settings.json` relative to `docker-compose.yml`.
 *   It is assumed that the configuration file for the file server is located at `config_files/settings.json` relative to `docker-compose.yml`.
 *   It is assumed that a `files` directory exists relative to `docker-compose.yml`, and that the `files_base_path` in the file server's `settings.json` is set to `/app/files`.
