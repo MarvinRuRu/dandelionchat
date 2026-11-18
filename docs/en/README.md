@@ -59,6 +59,9 @@ Android package name: `ru.dandelion.client`
 Register a domain for your messenger, for example, `dandelion-test.com`.
 
 Example Apache Reverse Proxy configuration file `/etc/apache2/sites-available/dandelion-test.com.conf` (for server port `8085`, domain `dandelion-test.com`, and a `letsencrypt` certificate):
+<details>
+<summary>Show</summary>
+
 ```
 <IfModule mod_ssl.c>
     <VirtualHost *:443>
@@ -85,12 +88,13 @@ Example Apache Reverse Proxy configuration file `/etc/apache2/sites-available/da
     </VirtualHost>
 </IfModule>
 ```
+</details>
 
 #### 4. Fill in the server configuration file settings.json
 
 Example (for running the server from a Docker container, so mariadb host is `172.17.0.1`):
 <details>
-<summary>Показать</summary>
+<summary>Show</summary>
   
 ```json
 {
@@ -173,7 +177,9 @@ CONFIG="config/settings.json" PORT=8085 HOST="127.0.0.1" /usr/lib/jvm/java-21-op
 #### 5.2 Starting the server from a Docker container
 
 **docker-compose.yml** to start the server on port 8085, on a fixed IP address of 172.18.0.100 in the virtual network. It is assumed that the server configuration file is located at `config/settings.json` relative to `docker-compose.yml`:
-
+<details>
+<summary>Show</summary>
+  
 ```yaml
 version: '3.8'
 
@@ -202,6 +208,7 @@ networks:
         - subnet: 172.18.0.0/16
 
 ```
+</details>
 
 Running a container from a directory with docker-compose.yml:
 
