@@ -176,7 +176,7 @@ CONFIG="config/settings.json" PORT=8085 HOST="127.0.0.1" /usr/lib/jvm/java-21-op
 
 #### 5.2 Запуск сервера из docker контейнера
 
-**docker-compose.yml** для запуска сервера на порту `8085`, на фиксированном ip `172.18.0.100` виртуальной сети. Предполагается, что конфигурационный файл сервера лежит по пути `config/settings.json` относительно `docker-compose.yml`:
+**docker-compose.yml** пример для запуска сервера на порту `8085`, на фиксированном ip `172.18.0.100` виртуальной сети. Предполагается, что конфигурационный файл сервера лежит по пути `config/settings.json` относительно `docker-compose.yml`:
 <details>
 <summary>Показать</summary>
 
@@ -242,7 +242,7 @@ docker-compose up -d
 *   **max_files_count:** временно не используется.
 *   **file_types_allowed:** временно не используется.
 
-**docker-compose.yml** для запуска сервера на порту `8085`, на фиксированном ip `172.18.0.100` виртуальной сети. 
+**docker-compose.yml** пример для запуска сервера с поддержкой файлов на порту `8085`(сервер файлов на порту 8086), на фиксированном ip `172.18.0.100` (сервер файлов на  ip `172.18.0.101`) виртуальной сети. 
 *   предполагается, что конфигурационный файл сервера сообщений лежит по пути `config/settings.json` относительно `docker-compose.yml`
 *   предполагается, что конфигурационный файл сервера файлов лежит по пути `config_files/settings.json` относительно `docker-compose.yml` 
 *   предполагается, что директория  `files` существует относительно `docker-compose.yml` и `files_base_path` в `settings.json` сервера файлов установлен как `/app/files`
@@ -287,7 +287,12 @@ services:
     restart: unless-stopped    
 
 networks:
-  dandelion-net:
+  dandelion-net:**docker-compose.yml** for running the server on port `8085`, with a fixed IP address of `172.18.0.100` within the virtual network.
+*   It is assumed that the configuration file for the messaging server is located at `config/settings.json` relative to `docker-compose.yml`.
+*   It is assumed that the configuration file for the file server is located at `config_files/settings.json` relative to `docker-compose.yml`.
+*   It is assumed that a `files` directory exists relative to `docker-compose.yml`, and that the `files_base_path` in the file server's `settings.json` is set to `/app/files`.
+<details>
+<summary>Show</summary>
     driver: bridge
     ipam:
       config:
