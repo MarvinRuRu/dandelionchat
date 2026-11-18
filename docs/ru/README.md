@@ -156,13 +156,7 @@ Android package name: `ru.dandelion.client`
 *   **server_instance_id:** идентификатор сервера для случая когда у вас настроено несколько серверов, вы переключаетесь между ними и клиент должен понимать какие данные к какому серверу относятся.
 *   **notifications:** параметры для получения Google Firebase оповещений Android и IOS мобильных приложений из п.2.
 *   **first_run_settings:** настройки первого запуска - создание пользователей.
-*   **test_bots:** включает бот**docker-compose.yml** for running the server on port `8085`, with a fixed IP address of `172.18.0.100` within the virtual network.
-*   It is assumed that the configuration file for the messaging server is located at `config/settings.json` relative to `docker-compose.yml`.
-*   It is assumed that the configuration file for the file server is located at `config_files/settings.json` relative to `docker-compose.yml`.
-*   It is assumed that a `files` directory exists relative to `docker-compose.yml`, and that the `files_base_path` in the file server's `settings.json` is set to `/app/files`.
-<details>
-<summary>Show</summary>ов, при помощи которых можно протестировать работу сервера. При добавлении в чат боты отвечают случайными сообщениями и пишут при длительной тишине в чате.
-
+*   **test_bots:** включает ботов, при помощи которых можно протестировать работу сервера. При добавлении в чат боты отвечают случайными сообщениями и пишут при длительной тишине в чате.
 
 #### 5. Запустить сервер
 
